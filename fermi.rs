@@ -97,17 +97,17 @@ fn main() -> std::io::Result<()> {
 		r##"
 		<g clip-path="url(#plot)" fill="none" stroke="black" stroke-width="2">
 			<polyline points="{fermi_points}"/>
-			<polyline points="{boltzmann_points}" stroke-dasharray="8 5"/>
+			<polyline points="{boltzmann_points}" stroke="red"/>
 		</g>
 
-		<g fill="none" stroke="black" stroke-width="2">
-			<line x1="520" y1="85" x2="560" y2="85"/>
-			<line x1="520" y1="110" x2="560" y2="110" stroke-dasharray="8 5"/>
+		<g fill="none" stroke-width="2">
+			<line x1="340" y1="25" x2="370" y2="25" stroke="black"/>
+			<line x1="535" y1="25" x2="565" y2="25" stroke="red"/>
 		</g>
 
 		<g font-family="sans-serif" font-size="14">
-			<text x="570" y="90">Fermi-Dirac</text>
-			<text x="570" y="115">Boltzmann</text>
+			<text x="380" y="30">Fermi-Dirac</text>
+			<text x="575" y="30">Boltzmann</text>
 		</g>
 		</svg>
 		"##
